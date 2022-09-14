@@ -1,0 +1,79 @@
+/* CSS RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Calculator */
+#calculator-wrapper {
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: min(95%, 550px);
+  border-radius: 6px;
+  margin-inline: auto;
+}
+#display-input {
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  background-color: inherit;
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 2px;
+}
+.col {
+  flex-grow: 1;
+}
+.col > div {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+.box {
+  padding: 10px;
+  min-width: 50px;
+  min-height: 45px;
+  text-align: center;
+  background-color: #555;
+  opacity: 0.9;
+  border-radius: 4px;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+.box:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+.bg-grey {
+  background-color: grey;
+}
+.bg-orange {
+  background-color: orange;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  height: 75px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
